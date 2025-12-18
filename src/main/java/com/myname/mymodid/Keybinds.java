@@ -1,4 +1,5 @@
 package com.myname.mymodid;
+import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent;
@@ -36,29 +37,4 @@ public class Keybinds {
         }
     }
 
-    @SideOnly(Side.CLIENT)
-    @SubscribeEvent(priority= EventPriority.NORMAL, receiveCanceled=true)
-    public static void onEvent(InputEvent.KeyInputEvent event) {
-        //debug
-        System.out.println("DolphinDive key event: " + event);
-
-        for (KeyBinding key: keybinds) {
-            if (key.isPressed()) {
-                switch (key.getKeyDescription()) {
-                    case "key.mymod.crouchslide":
-                        System.out.println("this is crouch slide");
-                    case "key.mymod.reload":
-                        System.out.println("this is reload");
-                    case "key.mymod.weaponmode":
-                        System.out.println("this is weaponmode");
-                    case "key.mymod.dolphindive":
-                        System.out.println("this is dolphindive");
-                    case "key.mymod.changesight":
-                        System.out.println("this is change sight");
-                }
-            }
-
-        }
-
-    }
 }
