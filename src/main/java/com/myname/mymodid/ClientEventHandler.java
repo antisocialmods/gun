@@ -18,7 +18,7 @@ public class ClientEventHandler {
     @SubscribeEvent(priority= EventPriority.NORMAL, receiveCanceled=true)
     public void onEvent(InputEvent.KeyInputEvent event) {
         //debug
-        System.out.println("DolphinDive key event: " + event);
+        //System.out.println("DolphinDive key event: " + event);
 
         for (KeyBinding key: Keybinds.keybinds) {
             if (key.isPressed()) {
