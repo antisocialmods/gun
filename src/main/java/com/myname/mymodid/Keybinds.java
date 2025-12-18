@@ -23,6 +23,7 @@ public class Keybinds {
         keybinds = new KeyBinding[5];
 
         // register ts keybinds
+        System.out.println("registering keybinds for DolphinDive");
         keybinds[0] = crouchSlideKey;
         keybinds[1] = reloadKey;
         keybinds[2] = weaponModeKey;
@@ -31,6 +32,7 @@ public class Keybinds {
 
         for (KeyBinding key: keybinds) {
             ClientRegistry.registerKeyBinding(key);
+            System.out.println("registered keybind " + key.getKeyDescription());
         }
     }
 
@@ -44,15 +46,15 @@ public class Keybinds {
             if (key.isPressed()) {
                 switch (key.getKeyDescription()) {
                     case "key.mymod.crouchslide":
-                        //
+                        System.out.println("this is crouch slide");
                     case "key.mymod.reload":
-                        //
+                        System.out.println("this is reload");
                     case "key.mymod.weaponmode":
-                        //
+                        System.out.println("this is weaponmode");
                     case "key.mymod.dolphindive":
-                        //
+                        System.out.println("this is dolphindive");
                     case "key.mymod.changesight":
-                        //
+                        System.out.println("this is change sight");
                 }
             }
 
