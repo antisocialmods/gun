@@ -1,0 +1,9 @@
+Roadmap:
+
+(*) make the keybinds register when they are pressed
+() change the names in everything
+() networking scaffolding
+() make the keybinds actually move the player
+() enforce legal movement only
+() make more advanced timing and speed sensitive movement for things like superjump
+() polish the ui
