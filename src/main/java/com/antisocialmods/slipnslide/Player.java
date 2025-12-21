@@ -1,5 +1,7 @@
 package com.antisocialmods.slipnslide;
 
-public class Player {
+import cpw.mods.fml.common
 
+public class Player {
+    public EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
 }
